@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Phishing URL Detector",
+  "version": "1.0",
+  "description": "Detect phishing websites using your local ML API.",
+  "permissions": ["tabs"],
+  "host_permissions": ["http://127.0.0.1:5000/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Phishing URL Detector"
+  }
+}

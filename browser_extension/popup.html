@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Phishing Detector</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 340px;
+      padding: 16px;
+      background: #eef2f7;
+      margin: 0;
+    }
+
+    h2 {
+      margin-top: 0;
+      text-align: center;
+      color: #111827;
+    }
+
+    .box {
+      background: white;
+      padding: 16px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .url-box {
+      background: #f9fafb;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      padding: 10px;
+      font-size: 13px;
+      word-break: break-word;
+      color: #374151;
+      min-height: 42px;
+    }
+
+    button {
+      width: 100%;
+      margin-top: 14px;
+      padding: 11px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background: #2563eb;
+      color: white;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background: #1d4ed8;
+    }
+
+    .result {
+      margin-top: 14px;
+      padding: 12px;
+      border-radius: 10px;
+      display: none;
+      border-left: 5px solid transparent;
+    }
+
+    .safe {
+      background: #ecfdf5;
+      color: #065f46;
+      border-left-color: #10b981;
+    }
+
+    .suspicious {
+      background: #fff7ed;
+      color: #9a3412;
+      border-left-color: #f59e0b;
+    }
+
+    .phishing {
+      background: #fef2f2;
+      color: #991b1b;
+      border-left-color: #ef4444;
+    }
+
+    .error {
+      background: #eff6ff;
+      color: #1e3a8a;
+      border-left-color: #2563eb;
+    }
+
+    .title {
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+
+    .small {
+      font-size: 13px;
+      margin-top: 6px;
+      word-break: break-word;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <h2>Phishing Detector</h2>
+  <div class="box">
+    <div id="urlText" class="url-box">Loading current tab URL...</div>
+    <button id="checkBtn">Check Current URL</button>
+    <div id="resultBox" class="result"></div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
