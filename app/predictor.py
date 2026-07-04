@@ -1,7 +1,7 @@
 import joblib
 import pandas as pd
 from urllib.parse import urlparse
-from feature_extractor import extract_features
+from .feature_extractor import extract_features
 
 # Load model and feature names
 model = joblib.load("model/phishing_model.pkl")
